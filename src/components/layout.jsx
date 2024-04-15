@@ -2,9 +2,9 @@ import { Suspense } from 'react'
 import Space from './space'
 import Header from './header'
 import Spinner from './spinner'
+import Footer from './footer'
 
 export default function Layout({ children }) {
-
     return (
         <>
             <Space />
@@ -13,6 +13,7 @@ export default function Layout({ children }) {
                 <Suspense fallback={<Spinner />}>
                 {children}
                 </Suspense>
+                <Footer />
             </div>
         </>
     )
