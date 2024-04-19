@@ -1,7 +1,8 @@
 import { Hono } from 'hono'
+import { authRoutes } from './routes/login.js'
 
-const app = new Hono()
+const app = new Hono().basePath('/api')
 
-app.get('/', (c) => c.text('Hello World!'))
+app.route('/login', authRoutes)
 
 export default app

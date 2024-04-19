@@ -10,5 +10,10 @@ export default defineConfig({
     alias: {
       '~': join(__dirname, 'src')
     }
+  },
+  server: {
+    proxy: {
+      '/api': 'http://localhost:3000'
+    }
   }
 })

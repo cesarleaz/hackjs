@@ -3,6 +3,7 @@ import HeaderLogo from './header-logo'
 import LeaderboardSVG from '~/icons/leaderboard.svg?react'
 import FaqSVG from '~/icons/faq.svg?react'
 import ChallengesSVG from '~/icons/challenges.svg?react'
+import ButtonLogin from './button-login'
 
 const links = [
     {
@@ -41,10 +42,11 @@ export default function Header() {
             <div className="flex items-center">
                 <HeaderLogo />
             </div>
-            <div className="hidden sm:flex justify-center md:justify-end items-center w-full">
+            <div className="flex justify-center md:justify-end items-center w-full">
                 {links.map(({ path, name, icon }) => (
                     <NavLink key={path} path={path} name={name} icon={icon} />
                 ))}
+                <ButtonLogin />
             </div>
         </div>
     </nav>

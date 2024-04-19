@@ -1,10 +1,11 @@
 import useSWR from 'swr'
 
-export function useUser() {
-    const { isLoading, user, mutate } = useSWR('/api/user')
+export const useUser = () => {
+    const { isLoading, data, mutate } = useSWR('/api/user')
 
     return {
         isLoading,
-        user,
+        user: data?.user,
+        setUser: mutate
     }
 }
