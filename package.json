@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.18",
+    "@magic-ext/oauth": "22.0.3",
     "@magic-sdk/admin": "^2.4.0",
     "@monaco-editor/react": "^4.6.0",
     "@upstash/redis": "^1.29.0",

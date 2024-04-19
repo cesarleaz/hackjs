@@ -11,6 +11,9 @@ importers:
       '@headlessui/react':
         specifier: ^1.7.18
         version: 1.7.18(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@magic-ext/oauth':
+        specifier: 22.0.3
+        version: 22.0.3
       '@magic-sdk/admin':
         specifier: ^2.4.0
         version: 2.4.0(bufferutil@4.0.8)(utf-8-validate@5.0.10)
@@ -452,6 +455,9 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
+
+  '@magic-ext/oauth@22.0.3':
+    resolution: {integrity: sha512-Wnre4iOTHyHPeaxdpaGwZAWqiAyTHadQHld6IfFcehVS3gKc96J674WEa3GFIvOFK5nEAJNkngh17KLly9HlZg==}
 
   '@magic-sdk/admin@2.4.0':
     resolution: {integrity: sha512-kuxtmjQNhWz1hPpCLSmd2OsuRSpabG3nLTxkpLi4ceH4YzzKLy1qpxJshzoOeRtwU7PcGlyK6iiQ9KJrHtAHBA==}
@@ -1005,6 +1011,9 @@ packages:
   cross-spawn@7.0.3:
     resolution: {integrity: sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==}
     engines: {node: '>= 8'}
+
+  crypto-js@3.3.0:
+    resolution: {integrity: sha512-DIT51nX0dCfKltpRiXV+/TVZq+Qq2NgF4644+K7Ttnla7zEzqc+kjJyiB96BHNyUTBxyjzRcZYpUdZa+QAqi6Q==}
 
   crypto-js@4.2.0:
     resolution: {integrity: sha512-KALDyEYgpY+Rlob/iriUtjV6d5Eq+Y191A5g4UqLAi8CyGP9N1+FdVbkc1SxKc2r4YAYqG8JzO2KGL+AizD70Q==}
@@ -3033,6 +3042,10 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
 
+  '@magic-ext/oauth@22.0.3':
+    dependencies:
+      crypto-js: 3.3.0
+
   '@magic-sdk/admin@2.4.0(bufferutil@4.0.8)(utf-8-validate@5.0.10)':
     dependencies:
       ethereum-cryptography: 1.2.0
@@ -3619,6 +3632,8 @@ snapshots:
       path-key: 3.1.1
       shebang-command: 2.0.0
       which: 2.0.2
+
+  crypto-js@3.3.0: {}
 
   crypto-js@4.2.0: {}
 
