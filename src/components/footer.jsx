@@ -30,7 +30,7 @@ function FooterLink({ name, href }) {
 
 export default function Footer() {
   return (
-    <footer className="rounded-lg m-4 bg-black/90">
+    <footer className="rounded-lg m-4 bg-black/90 mt-auto mb-2">
       <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
         <div className="flex items-center text-sm sm:text-center text-white gap-2">
           <a
