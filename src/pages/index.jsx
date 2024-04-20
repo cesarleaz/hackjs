@@ -1,11 +1,11 @@
 import Hero from '~/components/hero'
-import Challenges from '~/components/challenges'
+import ListOfChallenges from '~/components/list-of-challenges'
 
-export default function LandingPage() {
+export default function HomePage() {
     return (
         <>
             <Hero />
-            <Challenges />
+            <ListOfChallenges />
         </>
     )
 }
