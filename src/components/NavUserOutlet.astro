@@ -1,9 +1,9 @@
 ---
-import Spinner from './ui/Spinner.astro'
 import ButtonLogin from './ui/ButtonLogin.astro'
 import NavUserProfile from './NavUserProfile.astro'
+import { getSession } from 'auth-astro/server';
+
+const session = await getSession(Astro.request);
 ---
 
-<Spinner />
-<!-- <ButtonLogin />
-<NavUserProfile /> -->
+{session ? <NavUserProfile /> : <ButtonLogin /> }
