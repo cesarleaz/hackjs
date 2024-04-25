@@ -1,0 +1,14 @@
+---
+import Typography from './Typography.astro'
+import { CHALLENGES } from '../constants/challenges'
+import ChallengeCard from './ChallengeCard.astro'
+---
+
+<section id='retos' class='w-full max-w-6xl m-auto'>
+  <Typography variant='h2'>Retos de código</Typography>
+  <div class='grid grid-cols-1 gap-6 px-8 pt-10 md:grid-cols-2 xl:grid-cols-4'>
+    {CHALLENGES.map(challenge => (
+      <ChallengeCard key={challenge.level} {...challenge} />
+    ))}
+  </div>
+</section>

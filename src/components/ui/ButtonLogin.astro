@@ -1,0 +1,11 @@
+---
+import GithubSVG from '../icons/Github.astro'
+import Typography from '../Typography.astro'
+
+const { text = 'Iniciar sesión' } = Astro.props
+---
+
+<button class='flex items-center gap-2 text-gray-900 bg-white hover:bg-yellow-300 font-bold rounded-lg text-sm px-5 py-2.5 ms-2'>
+  <GithubSVG width='1rem' height='1rem' />
+  <Typography variant="body" color="black">{text}</Typography>
+</button>

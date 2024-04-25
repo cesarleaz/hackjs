@@ -1,0 +1,12 @@
+---
+import { CALL_TO_ACTION } from '../constants/call-to-action.js'
+import CTACard from './CTACard.astro'
+---
+
+<section>
+  <div
+    class='items-center justify-center mx-auto divide-y mb-36 divide-white/10 max-w-7xl xl:flex xl:justify-center xl:divide-y-0 xl:divide-x xl:py-8'
+  >
+    {CALL_TO_ACTION.map(cta => <CTACard key={cta.title} {...cta} />)}
+  </div>
+</section>

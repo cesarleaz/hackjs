@@ -1,0 +1,46 @@
+---
+import { DIFFICULTYS } from '../constants/challenges'
+const { level = 1, levelDifficulty = 1, dimension = '2x2' } = Astro.props
+
+const difficulty = DIFFICULTYS[levelDifficulty]
+
+const classes = [
+  'group relative transform hover:scale-105 hover:contrast-150 [animation:linear_reveal_both]![animation-range:entry_5%_cover_30%] ![animation-timeline:view()]',
+  dimension === '2x2' && 'col-span-1 xl:col-span-1 xl:row-span-1',
+  dimension === '4x2' && 'col-span-1 xl:col-span-1 xl:row-span-2',
+  dimension === '2x4' && 'col-span-1 xl:col-span-2 row-span-1'
+]
+
+const pictureClasses = [
+  dimension === '2x2' &&
+    'w-32 xs:w-40 md:w-48 xl:w-[120px] left-0 xs:left-10 md:left-5 lg:left-20 xl:left-0 absolute bottom-0 group-hover:animate-wiggle',
+  dimension === '2x4' &&
+    'w-40 xs:w-72 md:w-60 lg:w-72 left-0 xs:left-10 md:left-5 xl:left-20 absolute bottom-0 group-hover:animate-wiggle',
+  dimension === '4x2' &&
+    'w-32 xs:w-36 md:w-36 xl:w-[220px] left-0 xs:left-10 md:left-5 lg:left-20 xl:left-0 absolute bottom-0 group-hover:animate-wiggle'
+]
+---
+
+<a class:list={classes} href={`/challenge/${level}`}>
+  <article
+    class='border-2 rounded-lg relative min-h-[250px] h-full border-[#fbbf24] bg-[#fbbf24]/20'
+  >
+    <div class='absolute flex flex-col top-2 right-4'>
+      <span class='text-8xl font-sweater'>
+        {String(level).padStart(2, '0')}
+      </span>
+      <span
+        class='text-lime-300 relative text-base px-3 text-center bg-black rounded-full font-sweater'
+      >
+        {difficulty}
+      </span>
+    </div>
+    <img
+      class:list={pictureClasses}
+      src={`/challenges/${level}.svg`}
+      alt="Challenge's image"
+      loading='lazy'
+      decoding='async'
+    />
+  </article>
+</a>

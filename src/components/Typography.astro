@@ -1,0 +1,31 @@
+---
+const {
+  as: Tag = 'h2',
+  variant,
+  color = 'primary',
+  className,
+  ...props
+} = Astro.props
+
+const variantClasses = {
+  h2: 'text-6xl text-center',
+  title: 'text-7xl text-center'
+}
+
+const colorClasses = {
+  white: 'text-white',
+  black: 'text-black',
+  primary: 'text-yellow-300'
+}
+
+const classes = [
+  'block font-sweater',
+  variantClasses[variant],
+  colorClasses[color],
+  className
+]
+---
+
+<Tag class:list={classes} {...props} tabindex='0'>
+  <slot />
+</Tag>

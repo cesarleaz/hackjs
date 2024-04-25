@@ -1,54 +1,17 @@
 {
   "name": "@celelab/hackjs",
-  "private": true,
-  "version": "0.0.1",
   "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "dev:api": "NODE_ENV=development nodemon api/dev-server.js",
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "prepare": "husky install"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "@headlessui/react": "^1.7.18",
-    "@magic-ext/oauth": "22.0.3",
-    "@magic-sdk/admin": "^2.4.0",
-    "@monaco-editor/react": "^4.6.0",
-    "@upstash/redis": "^1.29.0",
-    "@vercel/analytics": "^1.2.2",
-    "clsx": "^2.1.0",
-    "hono": "^4.2.3",
-    "magic-sdk": "^28.0.3",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "swr": "^2.2.5",
-    "wouter": "^3.1.2"
-  },
-  "devDependencies": {
-    "@hono/node-server": "1.10.0",
-    "@types/react": "^18.2.66",
-    "@types/react-dom": "^18.2.22",
-    "@vitejs/plugin-react": "^4.2.1",
-    "autoprefixer": "^10.4.19",
-    "dotenv": "16.4.5",
-    "eslint": "^8.57.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-react": "^7.34.1",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.6",
-    "husky": "9.0.11",
-    "nodemon": "^3.1.0",
-    "postcss": "^8.4.38",
-    "prettier": "^3.2.5",
-    "standard": "^17.1.0",
-    "tailwindcss": "^3.4.3",
-    "vite": "^5.2.0",
-    "vite-plugin-svgr": "^4.2.0"
-  },
-  "lint-staged": {
-    "*.{js,jsx}": "eslint --cache --fix",
-    "*.{js,css,md}": "prettier --write"
+    "@astrojs/tailwind": "^5.1.0",
+    "astro": "^4.6.4",
+    "tailwindcss": "^3.4.3"
   }
 }

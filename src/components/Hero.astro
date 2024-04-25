@@ -1,0 +1,25 @@
+---
+import HeroSVG from './icons/Hero.astro'
+import ButtonToInstagram from './ButtonToInstagram.astro'
+import ButtonToChallenges from './ButtonToChallenges.astro'
+import Typography from './Typography.astro'
+---
+
+<section class='flex items-center justify-center pb-16'>
+  <div>
+    <div class='flex py-10 place-content-center'>
+      <Typography variant='title'>
+        Un espacio
+        <br />
+        lleno de retos de programación
+      </Typography>
+    </div>
+    <footer class='flex flex-col gap-4 p-10'>
+      <ButtonToInstagram />
+      <ButtonToChallenges />
+    </footer>
+  </div>
+  <div class='hidden w-1/2 sm:block'>
+    <HeroSVG />
+  </div>
+</section>

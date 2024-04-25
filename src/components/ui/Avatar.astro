@@ -1,0 +1,12 @@
+---
+const { alt = 'Avatar', src, ...props } = Astro.props
+---
+
+<img
+  {...props}
+  class='w-10 h-10 rounded-full'
+  src={src}
+  alt={alt}
+  loading='lazy'
+  decoding='async'
+/>

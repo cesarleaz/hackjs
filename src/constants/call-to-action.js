@@ -1,6 +1,6 @@
-import CodeSVG from '~/icons/code.svg?react'
-import GithubSVG from '~/icons/github.svg?react'
-import JavaScriptSVG from '~/icons/javascript.svg?react'
+import CodeSVG from '../components/icons/Code.astro'
+import GithubSVG from '../components/icons/Github.astro'
+import JavaScriptSVG from '../components/icons/Javascript.astro'
 
 export const CALL_TO_ACTION = [
     {

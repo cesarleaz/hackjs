@@ -1,0 +1,49 @@
+---
+import HeaderLogo from './HeaderLogo.astro'
+import LeaderboardSVG from './icons/Leaderboard.astro'
+import FaqSVG from './icons/FAQ.astro'
+import ChallengesSVG from './icons/Challenges.astro'
+import ButtonLogin from './ui/ButtonLogin.astro'
+
+const links = [
+  {
+    name: 'Retos',
+    path: '/#challenges',
+    icon: ChallengesSVG
+  },
+  {
+    name: 'Clasificación',
+    path: '/leaderboard',
+    icon: LeaderboardSVG
+  },
+  {
+    name: 'FAQ',
+    path: '/#faq',
+    icon: FaqSVG
+  }
+]
+---
+
+<nav class='p-4'>
+  <div
+    class='max-w-screen-lg flex flex-col items-center md:flex-row md:justify-between mx-auto'
+  >
+    <div class='flex items-center'>
+      <HeaderLogo />
+    </div>
+    <div class='flex justify-center md:justify-end items-center w-full'>
+      {
+        links.map(({ path, name, icon: IconTag }) => (
+          <a
+            href={path}
+            class='sm:hover:ring-2 ring-yellow-300 w-1/4 sm:w-auto p-2 rounded-lg flex text-xs sm:text-sm font-medium flex-col sm:flex-row items-center gap-1 transition hover:text-yellow-300 text-gray-100'
+          >
+            <IconTag width="1rem" height="1rem" />
+            <span class='font-bold'>{name}</span>
+          </a>
+        ))
+      }
+      <ButtonLogin />
+    </div>
+  </div>
+</nav>
