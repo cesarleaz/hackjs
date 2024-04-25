@@ -7,5 +7,7 @@ import vercel from "@astrojs/vercel/serverless";
 export default defineConfig({
   integrations: [tailwind()],
   output: 'hybrid',
-  adapter: vercel()
+  adapter: vercel({
+    webAnalytics: { enabled: true }
+  }),
 });
