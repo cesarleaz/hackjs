@@ -8,8 +8,7 @@
   const STAR_COUNT = (window.innerWidth + window.innerHeight) / 8
 
   // setup canvas
-  const $canvas = document.getElementById('canvas-space')
-  // @ts-ignore
+  const $canvas = document.getElementById('canvas-space') as HTMLCanvasElement
   const ctx = $canvas.getContext('2d')
 
   // aux variables
@@ -17,9 +16,7 @@
   let width
   let height
   let stars = []
-  let pointerX, pointerY
   let velocity = { x: 0, y: 0, tx: 0, ty: 0, z: 0.0005 }
-  let touchInput = false
 
   // Functions
   function generate() {
@@ -140,45 +137,10 @@
     })
   }
 
-  function movePointer(x, y) {
-    if (!pointerX || !pointerY) {
-      pointerX = x
-      pointerY = y
-      return
-    }
-    let ox = x - pointerX
-    let oy = y - pointerY
-    velocity.tx = velocity.tx + (ox / 8) * scale * (touchInput ? 1 : -1)
-    velocity.ty = velocity.ty + (oy / 8) * scale * (touchInput ? 1 : -1)
-    pointerX = x
-    pointerY = y
-  }
-
-  // handlers
-  function onMouseMove(event) {
-    touchInput = false
-    movePointer(event.clientX, event.clientY)
-  }
-
-  function onTouchMove(event) {
-    event.preventDefault()
-    touchInput = true
-    movePointer(event.touches[0].clientX, event.touches[0].clientY)
-  }
-
-  function onMouseLeave() {
-    pointerX = null
-    pointerY = null
-  }
-
   //listeners
   generate()
   resize()
   step()
 
   window.onresize = resize
-  $canvas.onmousemove = onMouseMove
-  $canvas.ontouchmove = onTouchMove
-  $canvas.ontouchend = onTouchMove
-  document.onmouseleave = onMouseLeave
 </script>
