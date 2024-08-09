@@ -7,7 +7,7 @@
 HackJS is a free programming challenge platform that is inspired by AdventJS. <br />
 It presents a space story full of new JavaScript programming challenges. <br />
 
-[Report Bug](https://github.com/celelab/hackjs/issues) · [Request Feature](https://github.com/celelab/hackjs/issues)
+[Report Bug](https://github.com/cesarleaz/hackjs/issues) · [Request Feature](https://github.com/cesarleaz/hackjs/issues)
 
 </div>
 
@@ -19,12 +19,12 @@ It presents a space story full of new JavaScript programming challenges. <br />
 
 You can use GitHub Codespaces for online development:
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/celelab/hackjs)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/cesarleaz/hackjs)
 
 Or clone it for local development:
 
 ```sh
-git clone https://github.com/celelab/hackjs.git
+git clone https://github.com/cesarleaz/hackjs.git
 cd hackjs
 pnpm install
 pnpm dev
@@ -51,6 +51,6 @@ pnpm dev
 
 ---
 
-Copyright © 2024 [César Leañez](https://github.com/celelab).
+Copyright © 2024 [César Leañez](https://github.com/cesarleaz).
 <br />
 This project is [Apache License 2.0](./LICENSE) licensed.

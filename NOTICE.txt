@@ -2,7 +2,7 @@ HackJS for "La hackaton del dev"
 
 Copyright 2024 César Leañez. or its affiliates. All Rights Reserved.
 
-This product includes software developed by César Leañez (http://www.github.com/celelab).
+This product includes software developed by César Leañez (http://www.github.com/cesarleaz).
 
 Licensed under the Apache License Version 2.0
 
