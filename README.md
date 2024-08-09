@@ -26,6 +26,10 @@ Or clone it for local development:
 ```sh
 git clone https://github.com/cesarleaz/hackjs.git
 cd hackjs
+# using npm
+npm install
+npm run dev
+# or using pnpm
 pnpm install
 pnpm dev
 ```
@@ -38,10 +42,7 @@ pnpm dev
 
 ## 🤝 Contributing
 
-> \[!NOTE]
->
-> For now we are NOT open to code contributions so as not to break the Dev Hackathon regulations, other types of contributions are welcome, such as reporting errors, suggesting new functions
->
+Contributions of all types are more than welcome; if you are interested in contributing code, feel free to check out our GitHub [Issues][github-issues-link] and [Projects][github-project-link] to get stuck in to show us what you’re made of.
 
 <div align="right">
 
