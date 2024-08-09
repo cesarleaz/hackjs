@@ -20,7 +20,7 @@ const { title } = Astro.props
     <meta name='generator' content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class='flex flex-col w-full h-[100dvh]'>
+  <body class='bg-black text-white flex flex-col w-full h-[100dvh]'>
     <Space />
     <div class='max-w-screen-lg mx-auto flex flex-col w-full h-full'>
       <Header />
@@ -29,9 +29,3 @@ const { title } = Astro.props
     </div>
   </body>
 </html>
-<style is:global>
-  body {
-    background: #111;
-    color: #fff;
-  }
-</style>
