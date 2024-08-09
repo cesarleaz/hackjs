@@ -42,7 +42,7 @@ pnpm dev
 
 ## 🤝 Contributing
 
-Contributions of all types are more than welcome; if you are interested in contributing code, feel free to check out our GitHub [Issues][(https://github.com/cesarleaz/hackjs/issues] to get stuck in to show us what you’re made of.
+Contributions of all types are more than welcome; if you are interested in contributing code, feel free to check out our GitHub [Issues](https://github.com/cesarleaz/hackjs/issues) to get stuck in to show us what you’re made of.
 
 <div align="right">
 
