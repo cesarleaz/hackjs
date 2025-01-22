@@ -17,9 +17,10 @@ It presents a space story full of new JavaScript programming challenges. <br />
 
 ## ⌨️ Local Development
 
-You can use GitHub Codespaces for online development:
+You can use GitHub Codespaces or Codeanywhere for online development:
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/cesarleaz/hackjs)
+[![Open in Codeanywhere](https://codeanywhere.com/img/open-in-codeanywhere-btn.svg)](https://app.codeanywhere.com/#https://github.com/cesarleaz/hackjs)
 
 Or clone it for local development:
 
